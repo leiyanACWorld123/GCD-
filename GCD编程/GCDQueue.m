@@ -62,7 +62,7 @@ static dispatch_queue_t queue;
     queue = dispatch_get_main_queue();
     dispatch_sync(queue, block);
 }
-+(void)queueInGlobal:(void(^)())block{
++(void)queueInGlobalAsync:(void(^)())block{
     static dispatch_queue_t queue;
     queue =  dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
     dispatch_async(queue, block);

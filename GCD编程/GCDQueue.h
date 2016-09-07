@@ -30,6 +30,7 @@ typedef NS_ENUM(NSInteger,GCDQueueType) {
 -(instancetype)initConcurrent;
 
 /**
+<<<<<<< HEAD
  *  开主线程队列
  *
  *  @param block <#block description#>
@@ -61,7 +62,6 @@ typedef NS_ENUM(NSInteger,GCDQueueType) {
  *  @param block <#block description#>
  */
 +(void)queueInGlobalSync:(void(^)())block;
-
 /**
  *  异步子线程延时
  *
